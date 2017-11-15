@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class toggleHands : MonoBehaviour {
 
+	public GameObject Camera;
     HandPool _handpool;
+
 	// Use this for initialization
 	void Start () {
         _handpool = this.GetComponent<HandPool>();
@@ -17,6 +19,8 @@ public class toggleHands : MonoBehaviour {
         {   
             _handpool.DisableGroup("HandCapsules1");
             _handpool.DisableGroup("HandRidgids1");
+			Camera.transform.position = new Vector3 (-0.037f, 0.936f, -0.947f);
+
 
         }
 
@@ -24,6 +28,7 @@ public class toggleHands : MonoBehaviour {
         {
             _handpool.EnableGroup("HandCapsules1");
             _handpool.EnableGroup("HandRidgids1");
+			Camera.transform.position = new Vector3 (2.4f, 0.936f, -0.947f);
 
         }
     }
