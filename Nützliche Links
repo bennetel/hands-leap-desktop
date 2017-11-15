@@ -6,4 +6,22 @@ https://github.com/leapmotion/UnityModules/wiki/Interaction-Engine
 
 https://we.tl/vQE5EJfr3P nur eine woche
 
+void Update()
+        {
+            for (int i = 0; i < ModelPool.Count; i++)
+            {
+                ModelGroup group = ModelPool[i];
+                if (Input.GetKeyDown("space"))
+                {
+                    group.IsEnabled = false;
+                    print(group.IsEnabled);
+                }
+                    
+                if (Input.GetKeyDown("backspace"))
+                {
+                    group.IsEnabled = true;
+                    print(group.IsEnabled);
+                }                
+            }
+        }
 
