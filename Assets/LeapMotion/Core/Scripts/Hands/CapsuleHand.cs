@@ -26,8 +26,8 @@ namespace Leap.Unity {
 
     private static int _leftColorIndex = 0;
     private static int _rightColorIndex = 0;
-    private static Color[] _leftColorList = { new Color(0.0f, 0.0f, 1.0f, 0.5f), new Color(0.2f, 0.0f, 0.4f, 0.5f), new Color(0.0f, 0.2f, 0.2f, 0.5f) };
-    private static Color[] _rightColorList = { new Color(1.0f, 0.0f, 0.0f, 0.5f), new Color(1.0f, 1.0f, 0.0f, 0.5f), new Color(1.0f, 0.5f, 0.0f, 0.5f) };
+    private static Color[] _leftColorList = { new Color(0.0f, 0.0f, 1.0f), new Color(0.2f, 0.0f, 0.4f), new Color(0.0f, 0.2f, 0.2f) };
+    private static Color[] _rightColorList = { new Color(1.0f, 0.0f, 0.0f), new Color(1.0f, 1.0f, 0.0f), new Color(1.0f, 0.5f, 0.0f) };
 
     [SerializeField]
     private Chirality handedness;
@@ -78,7 +78,7 @@ namespace Leap.Unity {
       if (_material != null) {
         _sphereMat = new Material(_material);
         _sphereMat.hideFlags = HideFlags.DontSaveInEditor;
-            }
+      }
     }
 
     private void OnValidate() {
@@ -225,7 +225,6 @@ namespace Leap.Unity {
       mesh = new Mesh();
       mesh.name = "GeneratedCylinder";
       mesh.hideFlags = HideFlags.DontSave;
-      
 
       List<Vector3> verts = new List<Vector3>();
       List<Color> colors = new List<Color>();
