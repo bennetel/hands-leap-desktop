@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/LeapMotion/Modules.meta
 guid: 2a4809ebc3f35bd4b9399c0340483b0e
 folderAsset: yes
 timeCreated: 1511891071
+=======
+guid: 5723d14435bab214b8f27f6d6b94d3ce
+folderAsset: yes
+timeCreated: 1510768491
+>>>>>>> e5093e011589760a885a7ed49b475c6ec5271e9c:Assets/LeapMotion/Modules.meta
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
