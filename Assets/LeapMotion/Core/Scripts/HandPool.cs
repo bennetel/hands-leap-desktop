@@ -145,7 +145,7 @@ namespace Leap.Unity {
       }
     }
 
-        private void InitializeModelGroup(ModelGroup collectionGroup) {
+    private void InitializeModelGroup(ModelGroup collectionGroup) {
         // Prevent the ModelGroup be initialized by multiple times
         if (modelGroupMapping.ContainsValue(collectionGroup)) {
           return;
@@ -227,7 +227,6 @@ namespace Leap.Unity {
               modelToHandRepMapping.Add(model, handRep);
             }
           }
-          
           group.IsEnabled = true;
         }
       }
